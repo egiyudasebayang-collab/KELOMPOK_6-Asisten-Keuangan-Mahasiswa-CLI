@@ -153,6 +153,10 @@ void sisa_uang() {
     printf("Masukkan uang hari ini: ");
     scanf("%f", &uang);
 
+    printf("Masukkan total pengeluaran: ");
+    scanf("%f", &pengeluaran);
+
+
 
 
 
