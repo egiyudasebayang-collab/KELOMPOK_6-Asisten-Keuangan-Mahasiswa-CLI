@@ -37,11 +37,11 @@ int main(){
 
 
      //Tugas EGI
-
-
-
-
-
+    // ===== validasi range input =====
+    if (pilihan < 0 || pilihan > 4) {
+        printf("Menu tidak tersedia!\n");
+        continue;
+    }
 
 
 
