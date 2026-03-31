@@ -43,29 +43,29 @@ int main(){
         continue;
     }
 
+// ===== LOGIKA MENU (TIDAK DIUBAH) =====
+        switch(pilihan) {
+            case 1:
+                diskon();
+                break;
+            case 2:
+                splitBill();
+                break;
+            case 3:
+                bunga();
+                break;
+            case 4:
+                sisaUang();
+                break;
+            case 0:
+                printf("\nTerima kasih telah menggunakan program!\n");
+                break;
+            default:
+                printf("\nPilihan tidak valid!\n");
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     return 0;
 }
 
@@ -96,7 +96,7 @@ void diskon() {
 
 // ================== FITUR 2 ============================
 // tugas naura
-void split_bill() {
+void splitBill() {
 
 
 
@@ -145,7 +145,7 @@ void bunga() {
 
 // ================== FITUR 4 ============================
 // tugas tika
-void sisa_uang() {
+void sisaUang() {
 
 
 
