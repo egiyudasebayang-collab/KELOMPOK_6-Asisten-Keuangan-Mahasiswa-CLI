@@ -10,9 +10,20 @@ void sisaUang();     // tugas tika
 int main(){
 
      // tempat kerja hilal - membuat tampilan UI
-
-
-
+    int pilihan;
+        
+        do {
+            printf("\n====================================\n");
+            printf("  ASISTEN KEUANGAN MAHASISWA CLI\n");
+            printf("====================================\n");
+            printf("1. Kalkulator Diskon\n");
+            printf("2. Split Bill\n");
+            printf("3. Bunga Tabungan\n");
+            printf("4. Sisa Uang Harian\n");
+            printf("0. Keluar\n");
+            printf("====================================\n");
+    
+    
 
 
 
@@ -53,7 +64,7 @@ int main(){
 
 
 
-
+        } while(pilihan != 0);
 
 
 
