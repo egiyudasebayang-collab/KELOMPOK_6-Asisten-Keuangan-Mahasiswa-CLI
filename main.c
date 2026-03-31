@@ -23,8 +23,8 @@ int main(){
             printf("0. Keluar\n");
             printf("====================================\n");
     
-    
-
+            // ===== INPUT + VALIDASI TAMBAHAN =====
+            printf("Pilih menu: ");
 
 
 
