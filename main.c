@@ -94,30 +94,29 @@ void diskon() {
     printf("Harga akhir: %.2f\n", total);
 }
 
-
 // ================== FITUR 2 ============================
 // tugas naura
 void splitBill() {
+    float total, patungan;
+    int orang;
 
+    printf("\n=== SPLIT BILL ===\n ");
 
+    printf("Masukkan total tagihan: ");
+    scanf("%f", &total);
 
+    printf("Masukkan jumlah orang: ");
+    scanf("%d", &orang);
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    //validasi
+    if (orang <= 0) {
+        printf("Jumlah orang harus lebih dari 0.\n");
+        return; 
+    }
+  
+    patungan = total / orang;
+  
+    printf("Tiap orang harus membayar: %.0f\n", patungan);   
 }
 
 // ================== FITUR 3 ============================
