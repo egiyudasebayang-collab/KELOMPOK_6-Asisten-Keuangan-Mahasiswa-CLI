@@ -96,7 +96,7 @@ void diskon() {
 
 // ================== FITUR 2 ============================
 // tugas naura
-void splitBill() {
+void splitBill() { 
     float total, patungan;
     int orang;
 
@@ -122,25 +122,25 @@ void splitBill() {
 // ================== FITUR 3 ============================
 // tugas rafael
 void bunga() {
-        
+    float saldo, bunga, hasil;
 
+    printf("\n=== BUNGA TABUNGAN ===\n");
 
+    printf("Masukkan saldo awal: ");
+    scanf("%f", &saldo);
 
+    printf("Masukkan bunga (%%): ");
+    scanf("%f", &bunga);
 
+    // Validasi
+    if (bunga < 0) {
+        printf("Bunga tidak valid!\n");
+        return;
+    }
 
+    hasil = saldo + (saldo * bunga / 100);
 
-
-
-
-
-
-
-
-
-
-
-
-
+    printf("Saldo akhir: %.2f\n", hasil);
 }
 
 // ================== FITUR 4 ============================
