@@ -114,9 +114,9 @@ int main(){
         printf("Jumlah orang harus lebih dari 0.\n");
         return 1; 
     }
-    
-    patungan
-
+    patungan = total / orang;
+    printf("Tiap orang harus membayar: %.0f\n", patungan);
+    return 0;
 }
 
 
