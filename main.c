@@ -36,6 +36,7 @@ int main(){
             continue;
         }
 
+    //Tugas EGI
 
 
 
@@ -52,11 +53,7 @@ int main(){
 
 
 
-
-
-
-     //Tugas EGI
-
+       
 
 
 
@@ -67,23 +64,7 @@ int main(){
 
 
 
-
-
-
-
-
-        } while(pilihan != 0);
-
-
-
-
-
-
-
-
-
-
-
+    } while(pilihan != 0);
 
     return 0;
 }
