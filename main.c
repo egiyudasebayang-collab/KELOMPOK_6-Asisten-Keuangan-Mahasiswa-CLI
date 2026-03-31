@@ -7,26 +7,26 @@ void bunga();         // tugas rafael
 void sisaUang();     // tugas tika
 
 // fungsi main dan tampilan -> tugas Egi dan Hilal
-int main(){
+int main() {
 
-     // tempat kerja hilal - membuat tampilan UI
+    // tempat kerja hilal - membuat tampilan UI
     int pilihan;
-        
-        do {
-            printf("\n====================================\n");
-            printf("  ASISTEN KEUANGAN MAHASISWA CLI\n");
-            printf("====================================\n");
-            printf("1. Kalkulator Diskon\n");
-            printf("2. Split Bill\n");
-            printf("3. Bunga Tabungan\n");
-            printf("4. Sisa Uang Harian\n");
-            printf("0. Keluar\n");
-            printf("====================================\n");
-    
-            // ===== INPUT + VALIDASI TAMBAHAN =====
-            printf("Pilih menu: ");
 
-            if (scanf("%d", &pilihan) != 1) {
+    do {
+        printf("\n====================================\n");
+        printf("  ASISTEN KEUANGAN MAHASISWA CLI\n");
+        printf("====================================\n");
+        printf("1. Kalkulator Diskon\n");
+        printf("2. Split Bill\n");
+        printf("3. Bunga Tabungan\n");
+        printf("4. Sisa Uang Harian\n");
+        printf("0. Keluar\n");
+        printf("====================================\n");
+
+        // ===== INPUT + VALIDASI TAMBAHAN =====
+        printf("Pilih menu: ");
+
+        if (scanf("%d", &pilihan) != 1) {
             printf("Input harus berupa angka!\n");
 
             // bersihkan buffer
@@ -36,14 +36,14 @@ int main(){
             continue;
         }
 
-    //Tugas EGI
-    // validasi rentang input
-    if (pilihan < 0 || pilihan > 4) {
-        printf("Menu tidak tersedia!\n");
-        continue;
-    }
+        //tugas Egi 
+        // validasi rentang input
+        if (pilihan < 0 || pilihan > 4) {
+            printf("Menu tidak tersedia!\n");
+            continue;
+        }
 
-// logika pilihan menu utama 
+        // logika pilihan menu utama
         switch(pilihan) {
             case 1:
                 diskon();
@@ -61,11 +61,11 @@ int main(){
                 printf("\nTerima kasih telah menggunakan program!\n");
                 break;
             default:
-                printf("\nPilihan tidak valid
+                printf("\nPilihan tidak valid!\n");
+        }
 
     } while(pilihan != 0);
 
-       
     return 0;
 }
 
@@ -96,11 +96,11 @@ void diskon() {
 
 // ================== FITUR 2 ============================
 // tugas naura
-void splitBill() { 
-    float total, patungan;
+void splitBill() {
+    float total,patungan;
     int orang;
 
-    printf("\n=== SPLIT BILL ===\n ");
+    printf("\n=== SPLIT BILL ===\n");
 
     printf("Masukkan total tagihan: ");
     scanf("%f", &total);
@@ -108,15 +108,15 @@ void splitBill() {
     printf("Masukkan jumlah orang: ");
     scanf("%d", &orang);
 
-    //validasi
+    // Validasi
     if (orang <= 0) {
-        printf("Jumlah orang harus lebih dari 0.\n");
-        return; 
+        printf("Jumlah orang tidak valid!\n");
+        return;
     }
-  
+
     patungan = total / orang;
-  
-    printf("Tiap orang harus membayar: %.0f\n", patungan);   
+
+    printf("Setiap orang membayar: %.0f\n", patungan);
 }
 
 // ================== FITUR 3 ============================
@@ -146,18 +146,18 @@ void bunga() {
 // ================== FITUR 4 ============================
 // tugas tika
 void sisaUang() {
+    float uang, pengeluaran, sisa;
 
+    printf("\n=== SISA UANG HARIAN ===\n");
 
+    printf("Masukkan uang hari ini: ");
+    scanf("%f", &uang);
 
+    printf("Masukkan total pengeluaran: ");
+    scanf("%f", &pengeluaran);
 
+    sisa = uang - pengeluaran;
 
-
-
-
-
-
-
-
-    
+    printf("Sisa uang: %.0f\n", sisa);
 
 }
