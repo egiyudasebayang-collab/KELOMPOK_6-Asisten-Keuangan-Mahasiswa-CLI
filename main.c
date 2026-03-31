@@ -26,7 +26,15 @@ int main(){
             // ===== INPUT + VALIDASI TAMBAHAN =====
             printf("Pilih menu: ");
 
+            if (scanf("%d", &pilihan) != 1) {
+            printf("Input harus berupa angka!\n");
 
+            // bersihkan buffer
+            while (getchar() != '\n');
+
+            pilihan = -1; // supaya masuk default
+            continue;
+        }
 
 
 
