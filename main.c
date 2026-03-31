@@ -73,6 +73,11 @@ int main(){
 // ================== FITUR 1 ============================
 // tugas yuki
 void diskon() {
+    float harga_awal, diskon_persen, potongan, harga_akhir;
+
+    printf("==========================");
+    printf("|Kalkulator Diskon Belanja|")
+    printf("=============================")
 
 
 
