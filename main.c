@@ -156,7 +156,11 @@ void sisa_uang() {
     printf("Masukkan total pengeluaran: ");
     scanf("%f", &pengeluaran);
 
+    sisa = uang - pengeluaran;
 
+    printf("Sisa uang: %.f\n", sisa);
+
+}
 
 
 
