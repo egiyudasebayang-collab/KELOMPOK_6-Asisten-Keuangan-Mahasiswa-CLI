@@ -10,40 +10,40 @@ void sisaUang();     // tugas tika
 int main(){
 
      // tempat kerja hilal - membuat tampilan UI
+    int pilihan;
+        
+        do {
+            printf("\n====================================\n");
+            printf("  ASISTEN KEUANGAN MAHASISWA CLI\n");
+            printf("====================================\n");
+            printf("1. Kalkulator Diskon\n");
+            printf("2. Split Bill\n");
+            printf("3. Bunga Tabungan\n");
+            printf("4. Sisa Uang Harian\n");
+            printf("0. Keluar\n");
+            printf("====================================\n");
+    
+            // ===== INPUT + VALIDASI TAMBAHAN =====
+            printf("Pilih menu: ");
 
+            if (scanf("%d", &pilihan) != 1) {
+            printf("Input harus berupa angka!\n");
 
+            // bersihkan buffer
+            while (getchar() != '\n');
 
+            pilihan = -1; // supaya masuk default
+            continue;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     //Tugas EGI
-    // ===== validasi range input =====
+    //Tugas EGI
+    // validasi rentang input
     if (pilihan < 0 || pilihan > 4) {
         printf("Menu tidak tersedia!\n");
         continue;
     }
 
-// ===== LOGIKA MENU (TIDAK DIUBAH) =====
+// logika pilihan menu utama 
         switch(pilihan) {
             case 1:
                 diskon();
@@ -61,11 +61,11 @@ int main(){
                 printf("\nTerima kasih telah menggunakan program!\n");
                 break;
             default:
-                printf("\nPilihan tidak valid!\n");
-        }
+                printf("\nPilihan tidak valid
 
+    } while(pilihan != 0);
 
-        
+       
     return 0;
 }
 
