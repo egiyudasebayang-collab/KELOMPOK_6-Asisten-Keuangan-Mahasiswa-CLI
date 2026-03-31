@@ -96,7 +96,7 @@ void diskon() {
 
 // ================== FITUR 2 ============================
 // tugas naura
-void split_bill() {
+void splitBill() {
 
 
 
@@ -122,50 +122,30 @@ void split_bill() {
 // ================== FITUR 3 ============================
 // tugas rafael
 void bunga() {
-         double saldo_awal, bunga_bulanan, total_akhir;
+    float saldo, bunga, hasil;
 
-    printf("   KALKULATOR BUNGA TABUNGAN SEDERHANA  \n");
+    printf("\n=== BUNGA TABUNGAN ===\n");
 
-    printf("Masukkan saldo awal (Rp): ");
-    scanf("%lf", &saldo_awal);
+    printf("Masukkan saldo awal: ");
+    scanf("%f", &saldo);
 
-    printf("Masukkan persentase bunga bulanan (%%): ");
-    scanf("%lf", &bunga_bulanan);
-    double bunga = saldo_awal * (bunga_bulanan / 100);
-    total_akhir = saldo_awal + bunga;
+    printf("Masukkan bunga (%%): ");
+    scanf("%f", &bunga);
 
-    printf("        Hasil        ");
-    printf("saldo awal : Rp %.2f\n", saldo_awal);
-    printf("bunga (%.2f%%) : Rp %.2f\n", bunga_bulanan, bunga);
-    printf("total akhir : Rp %.2f\n", total_akhir);
-}
-int main() {
-    bunga();
-    return 0;
-}")
+    // Validasi
+    if (bunga < 0) {
+        printf("Bunga tidak valid!\n");
+        return;
+    }
 
+    hasil = saldo + (saldo * bunga / 100);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    printf("Saldo akhir: %.2f\n", hasil);
 }
 
 // ================== FITUR 4 ============================
 // tugas tika
-void sisa_uang() {
+void sisaUang() {
 
 
 
