@@ -97,7 +97,27 @@ void diskon() {
 // ================== FITUR 2 ============================
 // tugas naura
 void split_bill() {
+int main(){
+    float total, patungan;
+    int orang;
 
+    printf("\n=== SPLIT BILL ===\n ");
+
+    printf("Masukkan total tagihan: ");
+    scanf("%f", &total);
+
+    printf("Masukkan jumlah orang: ");
+    scanf("%d", &orang);
+
+    //validasi
+    if (orang <= 0) {
+        printf("Jumlah orang harus lebih dari 0.\n");
+        return 1; 
+    }
+    
+    patungan
+
+}
 
 
 
