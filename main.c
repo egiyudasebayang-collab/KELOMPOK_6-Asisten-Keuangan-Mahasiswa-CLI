@@ -115,7 +115,7 @@ void diskon() {
 
 // ================== FITUR 2 ============================
 // tugas naura
-void split_bill() {
+void splitBill() {
 
 
 
@@ -164,7 +164,7 @@ void bunga() {
 
 // ================== FITUR 4 ============================
 // tugas tika
-void sisa_uang() {
+void sisaUang() {
 
 
 
