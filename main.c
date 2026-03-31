@@ -37,35 +37,35 @@ int main(){
         }
 
     //Tugas EGI
+    // validasi rentang input
+    if (pilihan < 0 || pilihan > 4) {
+        printf("Menu tidak tersedia!\n");
+        continue;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
-
-
-
-
-
-
-
-
+// logika pilihan menu utama 
+        switch(pilihan) {
+            case 1:
+                diskon();
+                break;
+            case 2:
+                splitBill();
+                break;
+            case 3:
+                bunga();
+                break;
+            case 4:
+                sisaUang();
+                break;
+            case 0:
+                printf("\nTerima kasih telah menggunakan program!\n");
+                break;
+            default:
+                printf("\nPilihan tidak valid
 
     } while(pilihan != 0);
 
+       
     return 0;
 }
 
