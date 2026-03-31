@@ -146,6 +146,12 @@ void bunga() {
 // ================== FITUR 4 ============================
 // tugas tika
 void sisa_uang() {
+    float uang, pengeluaran, sisa;
+
+    printf("\n=== SISA UANG HARIAN ===\n");
+
+    printf("Masukkan uang hari ini: ");
+    scanf("%f", &uang);
 
 
 
